@@ -442,6 +442,7 @@ eventListenerProperties: []
 #  - custom-property2=custom-value2
 # ```
 
+# catalogs -- Supports templating with `tpl`.
 catalogs:
   tpch: |
     connector.name=tpch
@@ -464,6 +465,7 @@ catalogs:
 #    memory.max-data-per-node=128MB
 # ```
 
+# additionalCatalogs -- Supports templating with `tpl`.
 additionalCatalogs: {}
 # additionalCatalogs -- Deprecated, use `catalogs` instead. Configure additional
 # [catalogs](https://trino.io/docs/current/installation/deployment.html#catalog-properties).

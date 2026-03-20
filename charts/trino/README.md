@@ -379,6 +379,8 @@ Fast distributed SQL query engine for big data analytics that helps you explore 
   ```
 * `catalogs` - object, default: `{"tpcds":"connector.name=tpcds\ntpcds.splits-per-node=4\n","tpch":"connector.name=tpch\ntpch.splits-per-node=4\n"}`  
 
+  Supports templating with `tpl`.
+
   Configure [catalogs](https://trino.io/docs/current/installation/deployment.html#catalog-properties).
   Example:
   ```yaml
@@ -392,6 +394,8 @@ Fast distributed SQL query engine for big data analytics that helps you explore 
      memory.max-data-per-node=128MB
   ```
 * `additionalCatalogs` - object, default: `{}`  
+
+  Supports templating with `tpl`.
 
   Deprecated, use `catalogs` instead. Configure additional [catalogs](https://trino.io/docs/current/installation/deployment.html#catalog-properties).
 * `env` - list, default: `[]`  

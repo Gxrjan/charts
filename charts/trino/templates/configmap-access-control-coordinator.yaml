@@ -9,6 +9,6 @@ metadata:
     app.kubernetes.io/component: coordinator
 data:
   {{- range $key, $val := .Values.accessControl.rules }}
-  {{ $key }}: {{- tpl $val . | quote }}
+  {{ $key }}: {{- tpl $val $ | quote }}
   {{- end }}
 {{- end }}
